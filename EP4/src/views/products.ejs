@@ -1,0 +1,11 @@
+<head>
+  <title>Products View</title>
+</head>
+<body>
+  <h1>Products All</h1>
+  <% products.map((product)=>{%>
+  <h4><a href="/products/<%=product.id%>"><%=product.productTitle%></a></h4>
+  <p>รายละเอียด : <%=product.productDescription%></p>
+  <p>ราคา : <%=product.productPrice%> บาท</p>
+  <%}) %>
+</body>
